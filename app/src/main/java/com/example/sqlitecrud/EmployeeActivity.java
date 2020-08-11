@@ -56,7 +56,7 @@ public class EmployeeActivity extends AppCompatActivity {
         cursor.close();
 
         //creating the adapter object
-        adapter = new EmployeeAdapter(getApplicationContext(), R.layout.list_layout_employee, employeeList);
+        adapter = new EmployeeAdapter(this, R.layout.list_layout_employee, employeeList, mDatabase);
 
         //adding the adapter to listview
         listViewEmployees.setAdapter(adapter);
